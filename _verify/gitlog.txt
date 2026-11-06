@@ -1,1 +1,2 @@
-d637ff26b708925ee777bd41e970a0b4e64a60a7 feat: hermes-business-brain plugin — vendored Business Brain engine, 13 tools, 19 bundled skills
+c9e1282 docs: finalize verification evidence (doctor, vault test, git log)
+b94895b feat: hermes-business-brain plugin — vendored Business Brain engine, 13 tools, 19 bundled skills
