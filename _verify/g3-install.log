@@ -1,0 +1,148 @@
+================================================================================
+GATE 3 — FUNCTIONAL INSTALL VERIFICATION: hermes-business-brain
+================================================================================
+Date      : 2026-11-06 (CST)
+Hermes CLI: v0.23.0 (2026.9.24) — hermes-agent install dir untouched
+Python    : /Users/pablomeneses/projects/hermes-business-brain/.venv/bin/python (3.14.7)
+Plugin    : hermes-business-brain 0.1.0 — 13 registered tools (brain_*)
+Source    : /Users/pablomeneses/projects/hermes-business-brain
+Protocol  : everything run in an ISOLATED temp HERMES_HOME; the real profile
+            /Users/pablomeneses/.hermes was never read or written.
+
+ISOLATED HOME (left in place per instructions)
+  HERMES_HOME=/tmp/g3-brain-home.EFPDKz
+  Installed plugin path: $HERMES_HOME/plugins/hermes-business-brain
+
+--------------------------------------------------------------------------------
+STEP 1 — INSTALL INTO CLEAN HOME
+--------------------------------------------------------------------------------
+Command (attempt A — direct local path):
+  export HERMES_HOME=$(mktemp -d /tmp/g3-brain-home.XXXXXX)   # -> /tmp/g3-brain-home.EFPDKz
+  cd /tmp && hermes plugins install /Users/pablomeneses/projects/hermes-business-brain \
+      --enable --yes-deps
+
+Output:
+  hermes: preparing dependencies for this data root (the checkout's updates belong to /Users/pablomeneses/.hermes)...
+  Preparing the isolated Hermes runtime…
+    → Installing Python dependencies…
+    ✓ Installing Python dependencies
+    → Installing Python dependencies…
+    ✓ Installing Python dependencies
+  Warning: custom (unreviewed) source — not from the Hermes catalog.
+  Cloning https://github.com/Users/pablomeneses.git (subdir: projects/hermes-business-brain)...
+  Error: Could not download the plugin from https://github.com/Users/pablomeneses.git.
+  ... remote: Repository not found.  fatal: repository 'https://github.com/Users/pablomeneses.git/' not found
+
+=> RESULT: CLI REJECTED the local path — the `install` identifier only accepts a catalog
+   name, Git URL, or owner/repo shorthand, so "/Users/pablomeneses/projects/..." was
+   misparsed as owner=Users/repo=pablomeneses.git. Fallback method used (as specified):
+
+Command (attempt B — symlink + enable):
+  mkdir -p $HERMES_HOME/plugins && \
+  ln -s /Users/pablomeneses/projects/hermes-business-brain $HERMES_HOME/plugins/hermes-business-brain && \
+  hermes plugins enable hermes-business-brain
+
+Output:
+  → Resolving Python dependencies…
+  ✓ Resolving Python dependencies
+  → Installing Python dependencies…
+  ✓ Installing Python dependencies
+  ✓ Plugin hermes-business-brain enabled.
+
+INSTALL METHOD USED: symlink into the temp home's plugins dir + `hermes plugins enable`
+(dependency resolution installed the declared deps PyYAML==6.0.3, jsonschema>=4.23,<5
+into the temp home's isolated runtime).
+
+--------------------------------------------------------------------------------
+STEP 2 — INSTALLATION VERIFICATION
+--------------------------------------------------------------------------------
+Command: hermes plugins list                     (exit 0)
+Target row from the full table — name, STATUS, version, source:
+  │ hermes-business-br… │ enabled │ 0.1.0 │ ...  │ git │
+  (provenance: self-cloned)
+
+Compact view — Command: hermes plugins list --plain --no-bundled   (exit 0)
+Output:
+  enabled      git      0.1.0    hermes-business-brain
+
+=> hermes-business-brain is ENABLED in the temp home.
+
+Command: hermes plugins doctor hermes-business-brain --ci    (exit 0)
+Output:
+  Plugin Doctor: /Users/pablomeneses/projects/hermes-business-brain
+    manifest: hermes-business-brain 0.1.0 (standalone)
+    OK: runtime discovery, manifest parsing, import, and registration passed
+    registrations: 13 tool(s), 0 hook(s)
+
+=> DOCTOR exit 0 with 13 tools registered. (Doctor target resolves through the
+   symlink to the repo path — expected for the symlink fallback method.)
+
+--------------------------------------------------------------------------------
+STEP 3 — FUNCTIONAL PROOF AGAINST THE INSTALLED COPY
+--------------------------------------------------------------------------------
+Method: import the plugin's own `tools` handler module from $HERMES_HOME/plugins/
+hermes-business-brain and call brain_create_vault / brain_validate_vault /
+brain_status exactly as Hermes would. Each handler spawns the vendored engine
+subprocess (engine/run_script.py + a script under engine/scripts/) from the
+INSTALLED copy, with the repo venv Python (PyYAML 6.0.3 + jsonschema).
+Proof script: /Users/pablomeneses/.hermes/profiles/ptah/cache/scratch/g3_functional_proof.py
+(besides temp-home reads, it only creates a synthetic vault under another mktemp dir,
+which it deletes itself before exiting.)
+
+Commands:
+  export HERMES_HOME=/tmp/g3-brain-home.EFPDKz
+  export G3_INSTALLED_PLUGIN=$HERMES_HOME/plugins/hermes-business-brain
+  PYTHONPATH=$G3_INSTALLED_PLUGIN /Users/pablomeneses/projects/hermes-business-brain/.venv/bin/python \
+    /Users/pablomeneses/.hermes/profiles/ptah/cache/scratch/g3_functional_proof.py
+
+Output:
+  tools.__file__        = /tmp/g3-brain-home.EFPDKz/plugins/hermes-business-brain/tools.py
+  from installed copy   = True
+  installed run_script  = /tmp/g3-brain-home.EFPDKz/plugins/hermes-business-brain/engine/run_script.py (exists)
+
+  == brain_create_vault == exit_code=0
+    stdout: {
+      "creada": "/private/var/folders/q8/.../g3-vault-root-.../gate3-vault",
+      "estado": "infraestructura_sin_conocimiento",
+      "nota": "Abrir y verificar manualmente en Obsidian"
+    }
+    created at: /private/var/folders/q8/.../g3-vault-root-.../gate3-vault
+
+  == brain_validate_vault == exit_code=0
+    stdout: {
+      "notas": 7, "ids": 7, "bloques": 0, "traspasos": 0,
+      "errores": [], "advertencias": [],
+      "tipos": { "mapa": 3, "control": 3, "sistema": 1 }
+    }
+
+  == brain_status == exit_code=0
+    stdout (key fields; full JSON printed by the script):
+      "empresa": "Gate 3 Synthetic Vault", "id_empresa": "g3probe01",
+      "version_instancia": "0.4.0-rc.1", "total_notas": 7,
+      "por_tipo": { "control": 3, "mapa": 3, "sistema": 1 },
+      "capas": { "infraestructura": 7, ... },
+      "plantillas_instaladas": 47, "vistas_bases_instaladas": 16,
+
+  FUNCTIONAL_PROOF_RESULT=OK (create=0 validate=0 status=0)
+  (proof process exit code: 0)
+
+=> create → validate → status all exit 0 against a synthetic vault on the
+   INSTALLED copy. Behavioral note: brain_create_vault requires `dest` to NOT
+   exist (the engine creates it); pre-creating the dir makes it fail safely
+   with "el destino ya existe" (exit 2). Vault id must match
+   [A-Za-z0-9][A-Za-z0-9_-]{1,63}.
+
+--------------------------------------------------------------------------------
+STEP 4 — CLEANUP
+--------------------------------------------------------------------------------
+The proof script removed its own synthetic vault root (g3-vault-root-*) before
+exiting; a post-run scan found no leftover g3-vault* dirs. The temp HERMES_HOME
+(/tmp/g3-brain-home.EFPDKz) is left in place per instructions. The real profile
+home was never touched.
+
+--------------------------------------------------------------------------------
+RESULT FLAGS
+--------------------------------------------------------------------------------
+INSTALL_OK=yes
+DOCTOR_OK=yes
+FUNCTIONAL_OK=yes

@@ -10,7 +10,7 @@ description: >
   drive a transcript custody-and-analysis pipeline — all as local subprocesses over
   user-provided paths, with no network access and no real business data shipped.
 
-author: unsulabs
+author: Pablomeneng
 license: MIT
 homepage: https://github.com/unsulabs/Obsidian-Bussines-Brain
 

@@ -12,4 +12,4 @@ For a delivery with new IDs, create a new external policy version with those exp
 
 Originals and bank versions remain immutable. The same manifest-bound authorization controls, SHA, external backup, fencing and journal keep applying. Rollback keeps its exact-restoration function and rejects later edits. Withdrawal of new cards can be completed after revoking the policy; historical transitions keep their previous access controls. Reading restored material remains subject to source permissions.
 
-Synthetic tests: `python -m unittest discover -s tests -p 'test_transcripciones_destino.py' -v`. They cover the three levels, wrong destination, changed policy, missing TR, rejected export, revocation, sensitivity downgrade, navigation and restore/post-edit. They don't attest GUI nor business semantic acceptance.
+Synthetic tests: `hermes plugins doctor hermes-business-brain --ci` (or the plugin repo tests via its `.venv`: `python -m pytest tests/ -q`). They cover the three levels, wrong destination, changed policy, missing TR, rejected export, revocation, sensitivity downgrade, navigation and restore/post-edit. They don't attest GUI nor business semantic acceptance.

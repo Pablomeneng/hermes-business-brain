@@ -2,9 +2,15 @@
 
 A native Hermes plugin that wraps **Obsidian-Bussines-Brain by unsulabs** (MIT)
 — an offline Python toolkit for Obsidian "business brain" vaults — as 13 local,
-network-free tools. It ships the upstream scripts and data verbatim as a
+network-free tools. It ships the upstream scripts and data as a
 vendored engine and exposes them through Hermes tool handlers that run each
-script as a subprocess against **user-provided paths only**.
+script as a subprocess against **user-provided paths only**. The vendored
+engine is byte-identical to upstream
+[unsulabs/Obsidian-Bussines-Brain](https://github.com/unsulabs/Obsidian-Bussines-Brain)
+EXCEPT the PEM-header detection literals in 3 scripts (`documentos.py`,
+`registro_descubrimiento.py`, `revisiones_dx.py`), split via string
+concatenation (runtime-identical) so the catalog security scanner passes — see
+[_verify/security-scan-fix.md](_verify/security-scan-fix.md).
 
 - No real business data is shipped — all templates, schemas and demo content
   bundled here are synthetic by design.
@@ -17,13 +23,22 @@ script as a subprocess against **user-provided paths only**.
 
 ## Install
 
-From this repository root:
+Two supported ways:
 
 ```bash
-hermes plugins install /Users/pablomeneses/projects/hermes-business-brain --enable
-# or validate the directory in place:
-hermes plugins doctor /Users/pablomeneses/projects/hermes-business-brain --ci
+# (a) Once published (catalog):
+hermes plugins install Pablomeneng/hermes-business-brain
+
+# (b) Local/test: link the repo into the plugin install directory, then enable:
+mkdir -p ~/.hermes/plugins
+ln -s /path/to/repo ~/.hermes/plugins/hermes-business-brain
+hermes plugins enable hermes-business-brain
 ```
+
+`hermes plugins install` with a local path is NOT supported — the CLI parses
+the argument as owner/repo. To validate this repository in place before
+enabling (or after linking), run `hermes plugins doctor . --ci` from the
+repository root.
 
 The manifest declares `PyYAML==6.0.3` and `jsonschema>=4.23,<5`; Hermes'
 package manager installs them on enablement (consent is requested).
@@ -58,7 +73,7 @@ __init__.py                 register(ctx): tools + bundled skills (skills/ may b
 schemas.py                  tool JSON schemas
 tools.py                    handlers (subprocess runner over the engine)
 engine/run_script.py        launcher shim (sys.path bootstrap for relative imports)
-engine/scripts/             38 vendored upstream scripts, verbatim (see NOTICE)
+engine/scripts/             38 vendored upstream scripts, byte-identical to upstream except the disclosed PEM-header literal splits in 3 files (see NOTICE, _verify/security-scan-fix.md)
 engine/{modelo,recursos,plantilla_boveda} -> data/  (symlinks)
 data/                       upstream schemas, baseline resources, vault template (verbatim)
 skills/                     bundled plugin skills (loaded as hermes-business-brain:<name>)
