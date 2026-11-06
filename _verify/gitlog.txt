@@ -1,2 +1,2 @@
-c9e1282 docs: finalize verification evidence (doctor, vault test, git log)
+f4fa1e4 docs: finalize verification evidence (doctor, vault test, git log)
 b94895b feat: hermes-business-brain plugin — vendored Business Brain engine, 13 tools, 19 bundled skills
