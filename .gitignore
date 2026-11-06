@@ -13,3 +13,8 @@ venv/
 # Editors
 .idea/
 .vscode/
+
+# skills CLI (npx skills add) artifacts — not part of the plugin
+.agents/
+skills/
+skills-lock.json
