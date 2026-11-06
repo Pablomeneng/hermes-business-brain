@@ -1,0 +1,66 @@
+{
+  "version": "0.2-alpha",
+  "politica": "No instalar software externo automáticamente. Verificar necesidad, versión, seguridad, mantenibilidad, licencia y reversibilidad.",
+  "recursos": [
+    {
+      "id": "obsidian-bases",
+      "tipo": "core",
+      "nombre": "Bases de Obsidian",
+      "url": "https://obsidian.md/help/bases",
+      "decision": "candidato_base",
+      "instalacion": "core integrado; activar en interfaz tras verificar versión",
+      "aplica": "vistas filtrables de notas Markdown, tablas, tarjetas, Kanban 1.14+",
+      "limites": "no fuente de verdad ni ACL"
+    },
+    {
+      "id": "obsidian-templates",
+      "tipo": "core",
+      "nombre": "Templates",
+      "url": "https://obsidian.md/help/plugins/templates",
+      "decision": "base",
+      "instalacion": "activar en interfaz y configurar ruta 90_Sistema/Plantillas",
+      "aplica": "esqueletos, no IDs únicos ni metodología por sí solo",
+      "limites": "Copiar a mano una plantilla puede duplicar ID: usar CLI para fichas"
+    },
+    {
+      "id": "obsidian-cli",
+      "tipo": "core_optional",
+      "nombre": "Obsidian CLI",
+      "url": "https://obsidian.md/help/cli",
+      "decision": "evaluar_en_destino",
+      "instalacion": "requiere instalador compatible, Obsidian GUI y activación explícita",
+      "aplica": "operar Obsidian desde terminal con Codex local",
+      "limites": "no disponible en todos los equipos o superficies remotas"
+    },
+    {
+      "id": "tasknotes",
+      "tipo": "third_party",
+      "nombre": "TaskNotes",
+      "url": "https://github.com/callumalpass/tasknotes",
+      "decision": "candidato_opcional",
+      "instalacion": "no automática, validar disponibilidad y licencia",
+      "aplica": "tareas, due vs scheduled, time tracking y agenda",
+      "limites": "no gestor de contratos/precios/finanzas; exportar Markdown si se desinstala"
+    },
+    {
+      "id": "obsidian-projects",
+      "tipo": "third_party_archived",
+      "nombre": "Obsidian Projects",
+      "url": "https://github.com/obsmd-projects/obsidian-projects",
+      "decision": "referencia_de_diseño_no_instalar",
+      "instalacion": "NO INSTALAR por defecto (archivado y fuera de catálogo)",
+      "aplica": "ideas de tabla/tablero/calendario/galería y plantillas de vistas",
+      "limites": "discontinuado 2025; LICENSE Apache 2.0 y package.json MIT: requiere revisión antes de copiar código"
+    },
+    {
+      "id": "dataview",
+      "tipo": "third_party",
+      "nombre": "Dataview",
+      "url": "https://github.com/blacksmithgu/obsidian-dataview",
+      "decision": "pendiente",
+      "instalacion": "no automática",
+      "aplica": "consultas más complejas cuando Bases no cubra un caso",
+      "limites": "evaluar mantenimiento, permisos y alternativas nativas"
+    }
+  ]
+}

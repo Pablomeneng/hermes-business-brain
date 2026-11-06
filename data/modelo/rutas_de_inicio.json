@@ -1,0 +1,124 @@
+{
+  "version": "0.2-alpha",
+  "principio": "La situación no es una etiqueta única de la empresa: cada necesidad puede estar en una etapa distinta. Primero recuperar, luego priorizar.",
+  "rutas": [
+    {
+      "situacion": "emprendedor_sin_empresa_formal",
+      "identificar": "Idea, cliente aún supuesto, actividades sin contratos, fuentes de mercado mínimas",
+      "primeras_clases": [
+        "D01",
+        "D02",
+        "D03"
+      ],
+      "primer_trabajo": "Contrastar problema/segmento y modelo de valor; priorizar hipótesis y experimento",
+      "peligro": "inventar compradores o pagos",
+      "gates": [
+        "G1",
+        "G2",
+        "G4",
+        "G6",
+        "G7"
+      ]
+    },
+    {
+      "situacion": "empresa_operando_conocimiento_disperso",
+      "identificar": "Cotizaciones y experiencias, decisiones en chats, precios antiguos mezclados",
+      "primeras_clases": [
+        "D01",
+        "D03",
+        "D04",
+        "X01",
+        "X04"
+      ],
+      "primer_trabajo": "Reconstruir oferta o proceso desde episodios y fuentes con vigencia",
+      "peligro": "elevar cotización a contrato o caso a política",
+      "gates": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "G5",
+        "G6",
+        "G7"
+      ]
+    },
+    {
+      "situacion": "empresa_documentada",
+      "identificar": "Manuales, sistemas oficiales, contratos, documentos con versiones",
+      "primeras_clases": [
+        "D01",
+        "D05",
+        "D06",
+        "D07",
+        "X05",
+        "X06"
+      ],
+      "primer_trabajo": "Mapa de autoridad por asunto/fecha y pregunta de recuperación concreta",
+      "peligro": "duplicar datos oficiales dentro de Obsidian",
+      "gates": [
+        "G1",
+        "G5",
+        "G7"
+      ]
+    },
+    {
+      "situacion": "crear_nueva_oferta",
+      "identificar": "Producto/servicio/consultoría nuevos, propuesta sin contrato",
+      "primeras_clases": [
+        "D02",
+        "D03",
+        "X01",
+        "X07"
+      ],
+      "primer_trabajo": "Definir mecanismo de compra, alcance, exclusiones, evidencia, precio y quién puede aprobar",
+      "peligro": "convertir herramienta/implementación en producto vendido",
+      "gates": [
+        "G2",
+        "G5",
+        "G6",
+        "G7"
+      ]
+    },
+    {
+      "situacion": "organizar_trabajo_activo",
+      "identificar": "Proyectos, compromisos, reuniones, tareas dispersas",
+      "primeras_clases": [
+        "D04",
+        "D06",
+        "X04",
+        "X07"
+      ],
+      "primer_trabajo": "Reconciliar proyectos y responsables con fuente actual y registrar hechos vs pendientes",
+      "peligro": "inventar estado o ejecución a partir de agendas",
+      "gates": [
+        "G1",
+        "G3",
+        "G5",
+        "G7"
+      ]
+    },
+    {
+      "situacion": "mejorar_area_empresarial",
+      "identificar": "Marketing, finanzas, operación, personas, cumplimiento u otra capacidad",
+      "primeras_clases": [
+        "D01",
+        "D02",
+        "D03",
+        "D04",
+        "D05",
+        "D06",
+        "D07"
+      ],
+      "primer_trabajo": "Definir decisión/tarea, fuente de autoridad y documento mínimo con valor real",
+      "peligro": "crear un organigrama o lista de 14 archivos sin necesidad",
+      "gates": [
+        "G1",
+        "G2",
+        "G4",
+        "G5",
+        "G6",
+        "G7"
+      ]
+    }
+  ]
+}

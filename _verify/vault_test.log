@@ -1,0 +1,18 @@
+Synthetic vault test run (real plugin handlers)
+temp root : /var/folders/q8/4yv1k3qj0bg344_62y4p7lx80000gn/T/bb-verify-69ei33ui
+vault     : /var/folders/q8/4yv1k3qj0bg344_62y4p7lx80000gn/T/bb-verify-69ei33ui/vault
+python    : /Users/pablomeneses/projects/hermes-business-brain/.venv/bin/python
+========================================================================
+[1] brain_create_vault exited=0 timed_out=False
+    summary: cerebro.py completed successfully (exit 0). Vault created at /private/var/folders/q8/4yv1k3qj0bg344_62y4p7lx80000gn/T/bb-verify-69ei33ui/vault.
+    stdout : {
+  "creada": "/private/var/folders/q8/4yv1k3qj0bg344_62y4p7lx80000gn/T/bb-verify-69ei33ui/vault",
+  "estado": "infraestructura_sin_conocimiento",
+  "nota": "Abrir y verificar manualmente en Obsidian"
+}
+[2] brain_validate_vault exited=0
+    summary: validar_boveda.py completed successfully (exit 0). 0 integrity errors, 0 warnings (7 notes).
+    errores=0 advertencias=0 notas=7 bloques=0 traspasos=0
+[3] brain_status exited=0
+    summary: cerebro.py completed successfully (exit 0).
+    empresa='Verify Test Company' id='VERIFY-001' total_notas=7 plantillas=47

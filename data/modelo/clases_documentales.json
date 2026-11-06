@@ -1,0 +1,455 @@
+{
+  "version": "vNext-1.0R",
+  "fuente": "Catálogo documental vNext-1.0R: mantener semántica y contenido, 14 clases NO 14 archivos",
+  "clases": [
+    {
+      "id": "D01",
+      "nombre": "Dirección, modelo de negocio y límites estratégicos",
+      "clase": "familia",
+      "encabezados": [
+        "00 Lectura ejecutiva y fecha de corte",
+        "01 Negocio efectivamente observado",
+        "02 Modelo de creación–entrega–captura de valor",
+        "03 Elecciones y renuncias estratégicas",
+        "04 Sistema de actividades y ventajas sustentables",
+        "05 Prioridades, métricas y límites",
+        "06 Hipótesis, alternativas y decisiones pendientes",
+        "07 Cambios y referencias de autoridad"
+      ],
+      "elicitacion": [
+        "Compara oportunidades reales aceptadas y rechazadas: ¿qué señales hacen que una oportunidad sí encaje o no?",
+        "¿Qué trabajo puede pagar bien pero deliberadamente no quiere la empresa, y por qué?",
+        "¿Qué prioriza cuando precio, capacidad, reputación, calidad y tiempo chocan?",
+        "¿Qué actividad o combinación de capacidades considera difícil de copiar y por qué?",
+        "¿Qué quiere construir o dejar de hacer en los próximos periodos, y qué evidencia cambiaría esa decisión?"
+      ],
+      "contenido_obligatorio": [
+        "Identidad verificable: negocio real y oferta efectivamente prestada; distinguir aspiración de actividad actual",
+        "Modelo de valor: pagador, usuario, comprador, trabajo a resolver, intercambio y mecánica de cobro",
+        "Segmentos elegidos y no elegidos, alcance geográfico, restricciones y renuncias explícitas",
+        "Diferencias competitivas apoyadas por actividades reales; no adjetivos aspiracionales",
+        "Prioridades temporales, capacidades/hitos, criterios para elegir y reglas de revisión",
+        "Supuestos críticos, contraevidencias, indicadores de avance con fuentes y dueño de decisión",
+        "Cambios de estrategia, motivos, fechas efectivas y decisiones formalmente aprobadas"
+      ],
+      "lectura_referencia": "metodologia/vNext-1.0R/Catalogo_Documentos_Canonicos_vNext_1_0R.md#d01"
+    },
+    {
+      "id": "D02",
+      "nombre": "Conocimiento del mercado, clientes y marca",
+      "clase": "familia",
+      "encabezados": [
+        "00 Hallazgos verificables y grado de certeza",
+        "01 Actores y circunstancias de compra",
+        "02 Segmentos observados e hipótesis",
+        "03 Trabajos, fricciones y alternativas por episodio",
+        "04 Evidencia de demanda y objeciones",
+        "05 Posicionamiento, señales de marca y lenguaje",
+        "06 Lo que NO sabemos y experimentos de contraste",
+        "07 Fuentes, alcance y revisiones"
+      ],
+      "elicitacion": [
+        "Compara clientes excelentes y problemáticos: ¿qué señales aparecen antes de contratar?",
+        "¿Qué pregunta, comportamiento o circunstancia revela mejor el trabajo que el cliente intenta resolver?",
+        "¿Qué objeciones son literales y cuáles suelen esconder otra preocupación?",
+        "¿Qué promesa o claim nunca haría la empresa aunque ayudara a vender?",
+        "¿Qué creencia sobre clientes ha cambiado después de experiencias reales?"
+      ],
+      "contenido_obligatorio": [
+        "Distinción explícita entre comprador, aprobador, pagador y usuario",
+        "Situaciones/Jobs to Be Done reconstruidos a partir de episodios concretos",
+        "Evidencia por segmento, tamaño y sesgo de la muestra; no extrapolación",
+        "Obstáculos, alternativas usadas, criterios de decisión y disparadores de compra",
+        "Canales donde se observa contacto y mensajes comprobables",
+        "Posicionamiento: asociaciones deseadas versus percibidas; claims autorizados/prohibidos",
+        "Vacíos de conocimiento, preguntas de descubrimiento y señal de actualización"
+      ],
+      "lectura_referencia": "metodologia/vNext-1.0R/Catalogo_Documentos_Canonicos_vNext_1_0R.md#d02"
+    },
+    {
+      "id": "D03",
+      "nombre": "Portafolio y sistema comercial",
+      "clase": "familia",
+      "encabezados": [
+        "00 Qué se puede ofrecer hoy",
+        "01 Mapa de modalidades y estado comercial",
+        "02 Promesa, alcance y exclusiones por modalidad",
+        "03 Precios y condiciones: autoridad y vigencia",
+        "04 Recorrido comercial de oportunidad a acuerdo",
+        "05 Materiales, claims y objeciones autorizadas",
+        "06 Excepciones, descuentos y cambios",
+        "07 Reglas de entrega comercial–operativa"
+      ],
+      "elicitacion": [
+        "¿Cómo construye la empresa un precio cuando el trabajo no coincide con una oferta estándar?",
+        "¿Qué componentes, costos, condiciones o exclusiones nunca deben omitirse al cotizar?",
+        "¿Cuándo conviene precio global, desglose, módulo, paquete o cotización personalizada?",
+        "¿Qué excepción comercial puede autorizar cada persona y cuál necesita otra aprobación?",
+        "¿Qué señales indican que una propuesta todavía no está lista para enviarse?"
+      ],
+      "contenido_obligatorio": [
+        "Mapa de líneas reales: vendidos, pilotos, productos en desarrollo, herramientas internas, discontinuados",
+        "Promesa y alcance por modalidad, exclusiones, condiciones y evidencia del cliente",
+        "Mecanismo comercial: origen, calificación, diagnóstico, oferta, aprobación, cierre y seguimiento",
+        "Definición de precio público/particular, moneda, impuestos, descuento, vigencia y aprobador",
+        "Pruebas de venta y separaciones: prestación, compra, entrega, uso de herramienta y cancelación",
+        "Reglas de mensajes, afirmaciones y claims autorizados por D02",
+        "Tratamiento de excepciones, devoluciones, garantía y transferencia a operación"
+      ],
+      "lectura_referencia": "metodologia/vNext-1.0R/Catalogo_Documentos_Canonicos_vNext_1_0R.md#d03"
+    },
+    {
+      "id": "D04",
+      "nombre": "Ejecución, experiencia y calidad",
+      "clase": "familia",
+      "encabezados": [
+        "00 Resultado prometido y criterio de entrega",
+        "01 Entradas y transferencias",
+        "02 Flujo de trabajo observado (no idealizado)",
+        "03 Decisiones, excepciones y fallas",
+        "04 Controles y evidencias de calidad",
+        "05 Recursos y capacidad disponible",
+        "06 Tratamiento de retrabajo, cierre y aprendizaje",
+        "07 Procesos autónomos y registro de mejoras"
+      ],
+      "elicitacion": [
+        "Reconstruye un trabajo real difícil desde confirmación hasta cierre: ¿dónde hubo decisiones críticas?",
+        "¿Qué señal temprana permite anticipar que la entrega puede salir mal?",
+        "¿Qué parte puede seguir una checklist y qué parte exige juicio experto?",
+        "¿Qué error es costoso/difícil de corregir y qué control lo evita?",
+        "¿Qué significa «terminado» o «aceptado» para la empresa en la práctica?"
+      ],
+      "contenido_obligatorio": [
+        "Promesa de entrada, criterios de aceptación y handoff de ventas",
+        "Mapa de flujo real de entrega con disparadores, entradas, salidas y excepciones",
+        "Responsables por tarea y quién decide, sin cargos inventados",
+        "Puntos críticos de calidad y evidencias mínimas de terminación",
+        "Dependencias de personas, sistemas, materiales y proveedores",
+        "Escalamientos y variantes por tipo de oferta",
+        "Aprendizajes comprobados y cambios aprobados a la práctica"
+      ],
+      "lectura_referencia": "metodologia/vNext-1.0R/Catalogo_Documentos_Canonicos_vNext_1_0R.md#d04"
+    },
+    {
+      "id": "D05",
+      "nombre": "Economía, caja y criterios financieros",
+      "clase": "familia",
+      "encabezados": [
+        "00 Lectura financiera con fecha y unidad monetaria",
+        "01 Modelo de ingresos y reconocimiento",
+        "02 Estructura de costos y drivers",
+        "03 Economía por oferta/proyecto",
+        "04 Cobros, pagos y caja",
+        "05 Presupuestos, escenarios y supuestos",
+        "06 Criterios y facultades para decisiones de dinero",
+        "07 Discrepancias, fuentes y cierres"
+      ],
+      "elicitacion": [
+        "¿Cómo estima el experto si un trabajo vale la pena antes de tener todos los costos cerrados?",
+        "¿Qué costos o consumos suele olvidar una persona que no conoce bien el negocio?",
+        "¿Cuándo un proyecto grande puede ser peor negocio que uno pequeño?",
+        "¿Qué criterio usa para anticipos, descuentos, crédito, compras o gastos extraordinarios?",
+        "¿Qué cifra o señal mira primero al tomar una decisión económica y qué limitaciones reconoce?"
+      ],
+      "contenido_obligatorio": [
+        "Mecánicas de ingreso: precio pactado, facturado, devengado y cobrado por separado",
+        "Costos variables/directos, fijos/compartidos y criterios de reparto declarados",
+        "Unidad económica por línea o trabajo: numerador, denominador, periodo, fuentes y excepciones",
+        "Caja: saldo de referencia, entradas/salidas esperadas, vencimientos y escenarios",
+        "Políticas de anticipo, crédito, descuento y autorización económica",
+        "Metas y umbrales con fórmulas, moneda, impuestos y responsable",
+        "Sensibilidades y alertas; conciliación entre narración y sistema contable"
+      ],
+      "lectura_referencia": "metodologia/vNext-1.0R/Catalogo_Documentos_Canonicos_vNext_1_0R.md#d05"
+    },
+    {
+      "id": "D06",
+      "nombre": "Personas reales, responsabilidades y facultades",
+      "clase": "familia",
+      "encabezados": [
+        "00 Cómo se organiza el trabajo",
+        "01 Funciones observadas, no departamentos",
+        "02 Quién decide qué y bajo qué límites",
+        "03 Ejecución, autorizaciones y delegación",
+        "04 Conocimientos críticos en personas",
+        "05 Sustituciones, accesos y continuidad",
+        "06 Onboarding y transferencia",
+        "07 Cambios de responsabilidades e incertidumbres"
+      ],
+      "elicitacion": [
+        "Si el fundador/dueño falta varios días, ¿qué puede seguir y qué se detiene realmente?",
+        "¿Qué decisiones sólo puede tomar hoy una persona específica y por qué?",
+        "¿Qué tarea podría delegarse si se explicitara mejor el criterio experto?",
+        "¿Qué conocimiento crítico vive en la cabeza de una persona y cómo se reconoce que alguien ya lo aprendió?",
+        "¿Qué diferencia existe entre ejecutar una tarea y tener facultad para comprometer a la empresa?"
+      ],
+      "contenido_obligatorio": [
+        "Personas/capacidades existentes y funciones realmente ejecutadas",
+        "Matriz simple de decisiones: asunto, quién decide, quién prepara, quién actúa y límites",
+        "Compromisos que requieren aprobación y delegaciones vigentes",
+        "Dependencias de conocimiento tácito, acceso y capacidad",
+        "Sustituciones realistas y límites de continuidad",
+        "Transferencia de aprendizaje y onboarding basado en tareas",
+        "Brechas y proyectos de mejora sin presentar cargos propuestos como reales"
+      ],
+      "lectura_referencia": "metodologia/vNext-1.0R/Catalogo_Documentos_Canonicos_vNext_1_0R.md#d06"
+    },
+    {
+      "id": "D07",
+      "nombre": "Riesgos, compromisos y dependencias críticas",
+      "clase": "familia",
+      "encabezados": [
+        "00 Exposiciones y compromisos que importan hoy",
+        "01 Obligaciones acreditadas y vencimientos",
+        "02 Riesgos priorizados por consecuencias",
+        "03 Controles reales y brechas",
+        "04 Recursos, proveedores y sistemas críticos",
+        "05 Datos, accesos y restricciones",
+        "06 Continuidad, recuperación y responsables",
+        "07 Verificaciones legales/financieras pendientes"
+      ],
+      "elicitacion": [
+        "¿Qué problema real ha causado más daño, retrabajo, pérdida de dinero o riesgo reputacional?",
+        "¿Qué dependencia dejaría a la empresa sin poder entregar si falla mañana?",
+        "¿Qué riesgo acepta deliberadamente y cuál nunca aceptaría?",
+        "¿Qué control o respaldo se da por supuesto pero no se ha probado de extremo a extremo?",
+        "¿Qué compromisos, permisos o revisiones requieren fuente contractual/profesional en vez de criterio interno?"
+      ],
+      "contenido_obligatorio": [
+        "Obligaciones materiales y fuente jurídica/documental sin sustituir contrato",
+        "Riesgo: evento, causa, impacto sobre cliente/caja/continuidad, probabilidad argumentada o «sin estimar»",
+        "Controles existentes versus propuestos, señales de alerta y responsable",
+        "Proveedores/sistemas/recursos cuya pérdida interrumpe oferta",
+        "Datos sensibles, clasificación, acceso, conservación y límites",
+        "Continuidad: medida de contingencia, recuperación, fuente y prueba",
+        "Permisos/licencias y dudas que requieren validación de especialista por jurisdicción"
+      ],
+      "lectura_referencia": "metodologia/vNext-1.0R/Catalogo_Documentos_Canonicos_vNext_1_0R.md#d07"
+    },
+    {
+      "id": "X01",
+      "nombre": "Ficha viva de oferta individual",
+      "clase": "expediente_condicional",
+      "encabezados": [
+        "00 Ficha de compra verificable",
+        "01 Cliente/problema y resultado prometido",
+        "02 Alcance y entregables medibles",
+        "03 Variantes y exclusiones",
+        "04 Precio, condiciones y fechas",
+        "05 Admisión, ejecución y aceptación",
+        "06 Riesgos, garantías, responsables",
+        "07 Versiones y referencias"
+      ],
+      "elicitacion": [
+        "¿Qué debe poder entender el comprador sin conversación adicional para contratar esta oferta?",
+        "¿Qué parte del alcance cambia más y cuál nunca debe quedar implícita?",
+        "¿Cómo se construye o autoriza el precio de esta oferta y qué excepciones existen?",
+        "¿Qué condición hace que la oferta no sea adecuada para un cliente/caso?",
+        "¿Qué criterio de aceptación/soporte/garantía es realmente aplicable?"
+      ],
+      "contenido_obligatorio": [
+        "Identidad: nombre, tipo producto/servicio/paquete, variantes y estado",
+        "Problema/circunstancia de uso y destinatario validado",
+        "Entregables, cantidades, especificaciones, exclusiones, responsabilidades del cliente",
+        "Reglas de precio, impuestos, moneda, fechas y aprobador",
+        "Condiciones de aceptación, cambios, garantías o soporte comprobado",
+        "Capacidad, requisitos, riesgos y dependencia operativa",
+        "Versiones: vigencia, sustituciones y comunicación a derivados"
+      ],
+      "lectura_referencia": "metodologia/vNext-1.0R/Catalogo_Documentos_Canonicos_vNext_1_0R.md#x01"
+    },
+    {
+      "id": "X02",
+      "nombre": "Proceso o instrucción de trabajo autónoma",
+      "clase": "expediente_condicional",
+      "encabezados": [
+        "00 Para qué sirve y cuándo aplica",
+        "01 Disparador, entradas y precondiciones",
+        "02 Flujo principal numerado",
+        "03 Puntos de decisión y excepciones",
+        "04 Responsabilidades y autorizaciones",
+        "05 Comprobaciones de calidad",
+        "06 Salida, evidencia y escalamiento",
+        "07 Pruebas, incidencias y versión"
+      ],
+      "elicitacion": [
+        "Pide al ejecutor que reconstruya una ejecución real y señale decisiones que no están en la checklist.",
+        "¿Qué señal obliga a detener el proceso?",
+        "¿Qué excepción requiere criterio y quién puede autorizarla?",
+        "¿Qué evidencia demuestra que el proceso terminó correctamente?",
+        "¿Qué error típico comete un novato siguiendo sólo pasos literales?"
+      ],
+      "contenido_obligatorio": [
+        "Disparador y condición de aplicabilidad",
+        "Entradas, versiones, permisos y precondiciones",
+        "Pasos observados y decisiones; distinguir procedimiento obligatorio de recomendación",
+        "Roles reales, límites de aprobación y escalamiento",
+        "Resultados/evidencia, criterio de aceptación, almacenamiento de registros",
+        "Excepciones, contingencias y señales de detenerse",
+        "Última prueba y cambio contra versión anterior"
+      ],
+      "lectura_referencia": "metodologia/vNext-1.0R/Catalogo_Documentos_Canonicos_vNext_1_0R.md#x02"
+    },
+    {
+      "id": "X03",
+      "nombre": "Ficha de relación con una cuenta o cliente",
+      "clase": "expediente_condicional",
+      "encabezados": [
+        "00 Relación y restricciones de acceso",
+        "01 Actores y autorizaciones",
+        "02 Objetivos expresados por el cliente",
+        "03 Interacciones relevantes y evidencia",
+        "04 Ofertas, acuerdos y estado comercial",
+        "05 Preferencias observadas y límites",
+        "06 Pendientes, riesgos y próximo contacto",
+        "07 Historia, fuente maestra y cierre"
+      ],
+      "elicitacion": [
+        "¿Qué papel real tiene cada interlocutor (usuario, comprador, pagador, aprobador)?",
+        "¿Qué necesidades fueron expresadas por el cliente y cuáles son interpretación interna?",
+        "¿Qué promesas o excepciones específicas siguen vigentes para esta cuenta?",
+        "¿Qué información no debe generalizarse al mercado?",
+        "¿Qué restricción de acceso/retención/privacidad cambia cómo se conserva la relación?"
+      ],
+      "contenido_obligatorio": [
+        "Identidad empresarial mínima y pseudónimo si corresponde",
+        "Roles: comprador, pagador, aprobador, usuario, contacto y fuente",
+        "Cronología de interacciones materiales y condiciones vigentes",
+        "Necesidades expresadas en contexto, NO diagnósticos psicológicos",
+        "Estado de oportunidades confirmado, eventos de venta y referencias contractuales",
+        "Restricciones de privacidad y retención",
+        "Próximas decisiones y tareas con responsable y fecha"
+      ],
+      "lectura_referencia": "metodologia/vNext-1.0R/Catalogo_Documentos_Canonicos_vNext_1_0R.md#x03"
+    },
+    {
+      "id": "X04",
+      "nombre": "Expediente de proyecto, caso o episodio",
+      "clase": "expediente_condicional",
+      "encabezados": [
+        "00 Ficha y confidencialidad del caso",
+        "01 Solicitud inicial y alcance",
+        "02 Línea temporal de hitos/fuentes",
+        "03 Propuesta, acuerdo y cambios",
+        "04 Ejecución y evidencias",
+        "05 Entrega, cobro y cierre — por separado",
+        "06 Problemas, causas e hipótesis",
+        "07 Lecciones, alcance y acciones recomendadas",
+        "08 Historial y referencias"
+      ],
+      "elicitacion": [
+        "¿Qué cambió materialmente durante el caso y por qué?",
+        "¿Qué decisiones/excepciones fueron exclusivas del caso?",
+        "¿Qué problema detectó el experto y qué señal lo hizo visible?",
+        "¿Qué resultado observado permite aprender y qué interpretación todavía es hipótesis?",
+        "¿Qué, si algo, debería promoverse a conocimiento común mediante una decisión separada?"
+      ],
+      "contenido_obligatorio": [
+        "Situación inicial y actores, jurisdicción/permisos pertinentes",
+        "Línea temporal: fecha, evento, fuente, cambio, efecto",
+        "Solicitado, propuesto, aceptado, entregado, facturado y cobrado, diferenciados",
+        "Decisiones y excepciones acotadas al caso",
+        "Evidencia del resultado, incidencias, limitaciones y cuentas sensibles",
+        "Lecciones: hecho observado, interpretación, alcance y acción propuesta",
+        "Referencias a fuentes y derivados; política afectada solo por aprobación separada"
+      ],
+      "lectura_referencia": "metodologia/vNext-1.0R/Catalogo_Documentos_Canonicos_vNext_1_0R.md#x04"
+    },
+    {
+      "id": "X05",
+      "nombre": "Acuerdo u obligación autónoma",
+      "clase": "expediente_condicional",
+      "encabezados": [
+        "00 Naturaleza, acceso y fuente contractual",
+        "01 Partes y objeto exacto",
+        "02 Obligaciones y derechos relevantes",
+        "03 Fechas, condiciones y vencimientos",
+        "04 Variaciones y documentos relacionados",
+        "05 Cumplimiento y evidencias",
+        "06 Riesgos, controversias y revisión profesional",
+        "07 Histórico de estados y restricciones"
+      ],
+      "elicitacion": [
+        "¿Qué obligaciones son operativamente más importantes y qué fuente exacta las acredita?",
+        "¿Qué interpretación depende de asesoría profesional y no debe resolver la IA?",
+        "¿Qué fechas/condiciones cambian el estado de cumplimiento?",
+        "¿Qué modificación o excepción existe respecto del acuerdo general?",
+        "¿Qué otros documentos/procesos/caja se ven afectados por este acuerdo?"
+      ],
+      "contenido_obligatorio": [
+        "Partes y objeto, jurisdicción y fuente de autoridad",
+        "Obligaciones, restricciones, contraprestaciones y fechas",
+        "Condiciones precedentes, aprobaciones, hitos y remedios contemplados",
+        "Modificaciones, renovaciones, terminaciones y controversias",
+        "Estado de cumplimiento basado en evidencias (no deducido)",
+        "Riesgos y datos restringidos; lectura jurídica por confirmar",
+        "Enlaces a proyectos, cifras y responsables afectados"
+      ],
+      "lectura_referencia": "metodologia/vNext-1.0R/Catalogo_Documentos_Canonicos_vNext_1_0R.md#x05"
+    },
+    {
+      "id": "X06",
+      "nombre": "Recurso, sistema o proveedor crítico",
+      "clase": "expediente_condicional",
+      "encabezados": [
+        "00 Recurso y criticidad explicada",
+        "01 Función y capacidades que habilita",
+        "02 Fuente oficial y estado consultable",
+        "03 Dependencias y personas autorizadas",
+        "04 Límites, costes y vencimientos",
+        "05 Sustitución, respaldo y recuperación",
+        "06 Incidentes y verificación de continuidad",
+        "07 Versiones y referencias"
+      ],
+      "elicitacion": [
+        "¿Qué capacidad empresarial se pierde si el recurso/sistema/proveedor falla?",
+        "¿Cuál es la fuente maestra del estado actual y qué no debe duplicarse?",
+        "¿Quién puede administrar/cambiar/sustituir este recurso?",
+        "¿Qué límite de capacidad o dependencia suele descubrirse demasiado tarde?",
+        "¿La recuperación/sustitución está probada o sólo declarada?"
+      ],
+      "contenido_obligatorio": [
+        "Identidad y función empresarial del recurso",
+        "Sistema de registro: dónde se consulta estado actual",
+        "Propietario/administrador operativo y permisos sin secretos",
+        "Dependencias de procesos/ofertas/servicios",
+        "Límites de capacidad, reemplazo y continuidad",
+        "Vencimiento, condiciones, ubicación de evidencia y coste cuando material",
+        "Historial de incidentes, cambios y pruebas de recuperación"
+      ],
+      "lectura_referencia": "metodologia/vNext-1.0R/Catalogo_Documentos_Canonicos_vNext_1_0R.md#x06"
+    },
+    {
+      "id": "X07",
+      "nombre": "Decisión, experimento o lección con identidad propia",
+      "clase": "expediente_condicional",
+      "encabezados": [
+        "00 Tipo: decisión / experimento / lección",
+        "01 Situación y pregunta a resolver",
+        "02 Opciones y supuestos",
+        "03 Evidencia y contraevidencia",
+        "04 Autoridad, decisión o hipótesis",
+        "05 Prueba, resultado y alcance de aprendizaje",
+        "06 Derivados afectados y acciones",
+        "07 Vigencia, revisión e histórico"
+      ],
+      "elicitacion": [
+        "¿Qué decisión/hipótesis exacta se está preservando y qué alternativas se consideraron?",
+        "¿Qué señal/evidencia hizo cambiar de opinión o elegir una opción?",
+        "¿Qué resultado falsaría la hipótesis o obligaría a revisar la decisión?",
+        "¿Qué parte es aprendizaje contextual y qué parte podría convertirse en política?",
+        "¿Qué derivados deben revisarse si cambia esta decisión?"
+      ],
+      "contenido_obligatorio": [
+        "Pregunta/decisión precisa, alternativas y supuestos",
+        "Quién tiene facultad, quién decidió, fecha, alcance y vigencia",
+        "Evidencia disponible, contradicciones y límites",
+        "Regla de éxito/fracaso del experimento, medición y fecha de revisión",
+        "Resultado observado versus interpretación y transferencia posible",
+        "Contenido que se promueve a política sólo tras aprobación explícita",
+        "Efectos en documentos y comunicación a usuarios"
+      ],
+      "lectura_referencia": "metodologia/vNext-1.0R/Catalogo_Documentos_Canonicos_vNext_1_0R.md#x07"
+    }
+  ]
+}

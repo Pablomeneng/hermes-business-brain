@@ -1,0 +1,7 @@
+Plugin Doctor: /Users/pablomeneses/projects/hermes-business-brain
+  manifest: hermes-business-brain 0.1.0 (standalone)
+  WARN: declared python_dependencies not installed: PyYAML==6.0.3 — install and 
+enable the plugin with hermes plugins. For an enabled plugin, run hermes pm 
+repair, then restart Hermes.
+  OK: runtime discovery, manifest parsing, import, and registration passed
+  registrations: 13 tool(s), 0 hook(s)

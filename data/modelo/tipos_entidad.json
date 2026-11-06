@@ -1,0 +1,1055 @@
+{
+  "version": "0.2.0-candidate",
+  "estado": "candidato_para_pilotos",
+  "descripcion": "Clases operativas diferenciadas. No equivalen a carpetas obligatorias ni contienen permisos automáticos.",
+  "tipos": [
+    {
+      "tipo": "empresa",
+      "prefijo": "EMP",
+      "representa": "Entidad legal/operativa con identidad y límites propios.",
+      "no_confundir": "No confundir marca, entidad legal y unidad de negocio.",
+      "carpeta": "20_Entidades",
+      "contenido_minimo": [
+        "Identidad y actividad",
+        "fuentes autorizadas",
+        "responsables y unidades",
+        "relaciones con ofertas y estrategias"
+      ],
+      "relaciones_candidatas": [
+        "organizacion",
+        "persona",
+        "modelo_negocio",
+        "oferta"
+      ],
+      "pregunta_de_prueba": "¿Qué organización estamos documentando y qué actividades realiza realmente?",
+      "campos_comunes": [
+        "id",
+        "tipo",
+        "clase",
+        "estado_editorial",
+        "estado_conocimiento",
+        "vigencia",
+        "sensibilidad",
+        "fuentes",
+        "registrado_en"
+      ],
+      "estado_inicial": {
+        "estado_editorial": "borrador",
+        "estado_conocimiento": "pendiente",
+        "vigencia": "sin_verificar",
+        "sensibilidad": "interno"
+      }
+    },
+    {
+      "tipo": "modelo_negocio",
+      "prefijo": "MOD",
+      "representa": "Explicación vigente o hipotética de cómo se crea, entrega y captura valor.",
+      "no_confundir": "No equivale a misión ni a una oferta comercial.",
+      "carpeta": "10_Conocimiento",
+      "contenido_minimo": [
+        "Propuesta de valor y mecanismo de captura",
+        "segmentos y renuncias",
+        "supuestos y evidencia",
+        "decisiones y cambios"
+      ],
+      "relaciones_candidatas": [
+        "empresa",
+        "oferta",
+        "investigacion",
+        "decision"
+      ],
+      "pregunta_de_prueba": "¿Cómo gana dinero este negocio y qué supuestos quedan sin validar?",
+      "campos_comunes": [
+        "id",
+        "tipo",
+        "clase",
+        "estado_editorial",
+        "estado_conocimiento",
+        "vigencia",
+        "sensibilidad",
+        "fuentes",
+        "registrado_en"
+      ],
+      "estado_inicial": {
+        "estado_editorial": "borrador",
+        "estado_conocimiento": "pendiente",
+        "vigencia": "sin_verificar",
+        "sensibilidad": "interno"
+      }
+    },
+    {
+      "tipo": "oferta",
+      "prefijo": "OFE",
+      "representa": "Propuesta comercial comprable con alcance, exclusiones, precio o regla de precio y vigencia.",
+      "no_confundir": "No confundir componente producto/servicio, propuesta particular o herramienta de prestación.",
+      "carpeta": "20_Entidades",
+      "contenido_minimo": [
+        "Cliente y resultado prometido",
+        "composición y modalidad",
+        "alcance y exclusiones",
+        "condiciones y autoridad de precio",
+        "admisión y cambios"
+      ],
+      "relaciones_candidatas": [
+        "producto",
+        "servicio",
+        "consultoria",
+        "propuesta_comercial",
+        "acuerdo",
+        "proyecto"
+      ],
+      "pregunta_de_prueba": "¿Qué puede contratarse hoy y con qué condiciones verificables?",
+      "campos_comunes": [
+        "id",
+        "tipo",
+        "clase",
+        "estado_editorial",
+        "estado_conocimiento",
+        "vigencia",
+        "sensibilidad",
+        "fuentes",
+        "registrado_en"
+      ],
+      "estado_inicial": {
+        "estado_editorial": "borrador",
+        "estado_conocimiento": "pendiente",
+        "vigencia": "sin_verificar",
+        "sensibilidad": "interno"
+      }
+    },
+    {
+      "tipo": "producto",
+      "prefijo": "PRO",
+      "representa": "Bien o activo entregable, tangible o digital, con identidad y ciclo propios.",
+      "no_confundir": "Su existencia no implica que esté en venta; su uso interno no equivale a comercialización.",
+      "carpeta": "20_Entidades",
+      "contenido_minimo": [
+        "Qué es y variante",
+        "uso y público",
+        "entrega",
+        "capacidades y límites",
+        "vínculo comercial y fuentes"
+      ],
+      "relaciones_candidatas": [
+        "oferta",
+        "proyecto",
+        "recurso",
+        "fuente"
+      ],
+      "pregunta_de_prueba": "¿Qué se entrega realmente como producto y cómo se relaciona con una oferta?",
+      "campos_comunes": [
+        "id",
+        "tipo",
+        "clase",
+        "estado_editorial",
+        "estado_conocimiento",
+        "vigencia",
+        "sensibilidad",
+        "fuentes",
+        "registrado_en"
+      ],
+      "estado_inicial": {
+        "estado_editorial": "borrador",
+        "estado_conocimiento": "pendiente",
+        "vigencia": "sin_verificar",
+        "sensibilidad": "interno"
+      }
+    },
+    {
+      "tipo": "servicio",
+      "prefijo": "SER",
+      "representa": "Trabajo o prestación con resultado, alcance y modalidad de entrega.",
+      "no_confundir": "Servicio prestado no implica producto licenciado o herramienta propia vendida.",
+      "carpeta": "20_Entidades",
+      "contenido_minimo": [
+        "Situación atendida",
+        "resultados",
+        "alcance y exclusiones",
+        "pasos y calidad",
+        "evidencia de prestación"
+      ],
+      "relaciones_candidatas": [
+        "oferta",
+        "proceso",
+        "proyecto",
+        "cliente_cuenta"
+      ],
+      "pregunta_de_prueba": "¿Qué se presta y qué resultados/obligaciones genera?",
+      "campos_comunes": [
+        "id",
+        "tipo",
+        "clase",
+        "estado_editorial",
+        "estado_conocimiento",
+        "vigencia",
+        "sensibilidad",
+        "fuentes",
+        "registrado_en"
+      ],
+      "estado_inicial": {
+        "estado_editorial": "borrador",
+        "estado_conocimiento": "pendiente",
+        "vigencia": "sin_verificar",
+        "sensibilidad": "interno"
+      }
+    },
+    {
+      "tipo": "consultoria",
+      "prefijo": "CON",
+      "representa": "Modalidad profesional de servicio basada en criterio experto y entregables acordados.",
+      "no_confundir": "No convertir método, herramienta utilizada o investigación en producto vendido.",
+      "carpeta": "20_Entidades",
+      "contenido_minimo": [
+        "Problema y diagnóstico",
+        "metodología empleada",
+        "criterio experto",
+        "entregables",
+        "límites y riesgos"
+      ],
+      "relaciones_candidatas": [
+        "servicio",
+        "oferta",
+        "implementacion",
+        "proyecto",
+        "investigacion"
+      ],
+      "pregunta_de_prueba": "¿Cuál es el servicio profesional contratado y qué herramientas solo se utilizaron?",
+      "campos_comunes": [
+        "id",
+        "tipo",
+        "clase",
+        "estado_editorial",
+        "estado_conocimiento",
+        "vigencia",
+        "sensibilidad",
+        "fuentes",
+        "registrado_en"
+      ],
+      "estado_inicial": {
+        "estado_editorial": "borrador",
+        "estado_conocimiento": "pendiente",
+        "vigencia": "sin_verificar",
+        "sensibilidad": "interno"
+      }
+    },
+    {
+      "tipo": "herramienta",
+      "prefijo": "HER",
+      "representa": "Aplicación, técnica o sistema utilizado internamente o por terceros.",
+      "no_confundir": "Usar una herramienta no acredita contrato de licencia, venta ni propiedad intelectual.",
+      "carpeta": "20_Entidades",
+      "contenido_minimo": [
+        "Función",
+        "titularidad y proveedor",
+        "versión",
+        "dependencias",
+        "accesos autorizados",
+        "uso registrado"
+      ],
+      "relaciones_candidatas": [
+        "consultoria",
+        "implementacion",
+        "recurso",
+        "proceso"
+      ],
+      "pregunta_de_prueba": "¿Qué herramienta se usó, para qué y qué relación contractual existe realmente?",
+      "campos_comunes": [
+        "id",
+        "tipo",
+        "clase",
+        "estado_editorial",
+        "estado_conocimiento",
+        "vigencia",
+        "sensibilidad",
+        "fuentes",
+        "registrado_en"
+      ],
+      "estado_inicial": {
+        "estado_editorial": "borrador",
+        "estado_conocimiento": "pendiente",
+        "vigencia": "sin_verificar",
+        "sensibilidad": "interno"
+      }
+    },
+    {
+      "tipo": "implementacion",
+      "prefijo": "IMP",
+      "representa": "Despliegue de una capacidad o solución en un contexto y fecha determinados.",
+      "no_confundir": "No confundir el trabajo ejecutado con producto/servicio comercial general.",
+      "carpeta": "30_Registros",
+      "contenido_minimo": [
+        "Contexto y objetivos",
+        "alcance aprobado",
+        "herramientas",
+        "pruebas",
+        "aceptación",
+        "incidencias"
+      ],
+      "relaciones_candidatas": [
+        "proyecto",
+        "herramienta",
+        "servicio",
+        "protocolo"
+      ],
+      "pregunta_de_prueba": "¿Qué se implementó, dónde, con qué evidencia y bajo qué alcance?",
+      "campos_comunes": [
+        "id",
+        "tipo",
+        "clase",
+        "estado_editorial",
+        "estado_conocimiento",
+        "vigencia",
+        "sensibilidad",
+        "fuentes",
+        "registrado_en"
+      ],
+      "estado_inicial": {
+        "estado_editorial": "borrador",
+        "estado_conocimiento": "pendiente",
+        "vigencia": "sin_verificar",
+        "sensibilidad": "interno"
+      }
+    },
+    {
+      "tipo": "protocolo",
+      "prefijo": "PRT",
+      "representa": "Regla o acuerdo formal de actuación frente a situaciones definidas.",
+      "no_confundir": "No confundir protocolo aprobado con proceso observado o sugerencia de IA.",
+      "carpeta": "20_Entidades",
+      "contenido_minimo": [
+        "Disparador y ámbitos",
+        "autoridad y fecha",
+        "acciones esperadas",
+        "excepciones",
+        "escalamiento"
+      ],
+      "relaciones_candidatas": [
+        "proceso",
+        "decision",
+        "acuerdo",
+        "fuente"
+      ],
+      "pregunta_de_prueba": "¿Qué comportamiento está realmente autorizado y cuándo aplica?",
+      "campos_comunes": [
+        "id",
+        "tipo",
+        "clase",
+        "estado_editorial",
+        "estado_conocimiento",
+        "vigencia",
+        "sensibilidad",
+        "fuentes",
+        "registrado_en"
+      ],
+      "estado_inicial": {
+        "estado_editorial": "borrador",
+        "estado_conocimiento": "pendiente",
+        "vigencia": "sin_verificar",
+        "sensibilidad": "interno"
+      }
+    },
+    {
+      "tipo": "proceso",
+      "prefijo": "PRS",
+      "representa": "Secuencia recurrente para generar un resultado empresarial; puede ser observada o normativa.",
+      "no_confundir": "No asumir que todo proceso necesita un SOP o que el proceso ideal se ejecuta.",
+      "carpeta": "20_Entidades",
+      "contenido_minimo": [
+        "Disparador",
+        "entradas y salidas",
+        "pasos reales",
+        "responsables",
+        "excepciones",
+        "controles y evidencia"
+      ],
+      "relaciones_candidatas": [
+        "protocolo",
+        "servicio",
+        "proyecto",
+        "persona",
+        "fuente"
+      ],
+      "pregunta_de_prueba": "¿Cómo sucede realmente este trabajo, cuándo falla y quién interviene?",
+      "campos_comunes": [
+        "id",
+        "tipo",
+        "clase",
+        "estado_editorial",
+        "estado_conocimiento",
+        "vigencia",
+        "sensibilidad",
+        "fuentes",
+        "registrado_en"
+      ],
+      "estado_inicial": {
+        "estado_editorial": "borrador",
+        "estado_conocimiento": "pendiente",
+        "vigencia": "sin_verificar",
+        "sensibilidad": "interno"
+      }
+    },
+    {
+      "tipo": "proyecto",
+      "prefijo": "PRY",
+      "representa": "Trabajo delimitado por objetivo, alcance, estado, responsables y entregables.",
+      "no_confundir": "No confundir proyecto con oferta, cliente, reunión o caso histórico.",
+      "carpeta": "30_Registros",
+      "contenido_minimo": [
+        "Objetivo y alcance",
+        "cliente/solicitud",
+        "hitos y entregables",
+        "dependencias",
+        "decisiones y aceptación"
+      ],
+      "relaciones_candidatas": [
+        "organizacion",
+        "cliente_cuenta",
+        "oferta",
+        "proceso",
+        "tarea",
+        "reunion",
+        "caso"
+      ],
+      "pregunta_de_prueba": "¿Qué se está desarrollando, qué falta y qué está aprobado?",
+      "campos_comunes": [
+        "id",
+        "tipo",
+        "clase",
+        "estado_editorial",
+        "estado_conocimiento",
+        "vigencia",
+        "sensibilidad",
+        "fuentes",
+        "registrado_en"
+      ],
+      "estado_inicial": {
+        "estado_editorial": "borrador",
+        "estado_conocimiento": "pendiente",
+        "vigencia": "sin_verificar",
+        "sensibilidad": "interno"
+      }
+    },
+    {
+      "tipo": "caso",
+      "prefijo": "CAS",
+      "representa": "Episodio o experiencia suficientemente relevante para aprender o recuperar evidencia.",
+      "no_confundir": "Un caso particular no se transforma automáticamente en política universal.",
+      "carpeta": "30_Registros",
+      "contenido_minimo": [
+        "Contexto y línea temporal",
+        "episodio",
+        "resultado",
+        "excepciones",
+        "interpretación y límites"
+      ],
+      "relaciones_candidatas": [
+        "proyecto",
+        "oferta",
+        "cliente_cuenta",
+        "investigacion",
+        "decision"
+      ],
+      "pregunta_de_prueba": "¿Qué ocurrió en esa experiencia y qué podemos realmente generalizar?",
+      "campos_comunes": [
+        "id",
+        "tipo",
+        "clase",
+        "estado_editorial",
+        "estado_conocimiento",
+        "vigencia",
+        "sensibilidad",
+        "fuentes",
+        "registrado_en"
+      ],
+      "estado_inicial": {
+        "estado_editorial": "borrador",
+        "estado_conocimiento": "pendiente",
+        "vigencia": "sin_verificar",
+        "sensibilidad": "interno"
+      }
+    },
+    {
+      "tipo": "sesion",
+      "prefijo": "SES",
+      "representa": "Unidad fechada de trabajo o interacción con resultados y contexto propios.",
+      "no_confundir": "No confundir sesión con reunión formal, caso, propuesta ni proyecto.",
+      "carpeta": "30_Registros",
+      "contenido_minimo": [
+        "Propósito y participantes",
+        "situación",
+        "actividad",
+        "decisiones o hipótesis",
+        "entregables",
+        "continuidad"
+      ],
+      "relaciones_candidatas": [
+        "reunion",
+        "proyecto",
+        "persona",
+        "decision",
+        "tarea"
+      ],
+      "pregunta_de_prueba": "¿Qué se hizo en la sesión, qué cambió y qué sigue?",
+      "campos_comunes": [
+        "id",
+        "tipo",
+        "clase",
+        "estado_editorial",
+        "estado_conocimiento",
+        "vigencia",
+        "sensibilidad",
+        "fuentes",
+        "registrado_en"
+      ],
+      "estado_inicial": {
+        "estado_editorial": "borrador",
+        "estado_conocimiento": "pendiente",
+        "vigencia": "sin_verificar",
+        "sensibilidad": "interno"
+      }
+    },
+    {
+      "tipo": "reunion",
+      "prefijo": "REU",
+      "representa": "Encuentro identificado por fecha, participantes, asuntos y acuerdos.",
+      "no_confundir": "Una afirmación de reunión no equivale a decisión aprobada, factura o contrato.",
+      "carpeta": "30_Registros",
+      "contenido_minimo": [
+        "Participantes y roles",
+        "agenda",
+        "asuntos",
+        "decisiones con aprobador",
+        "tareas y fecha"
+      ],
+      "relaciones_candidatas": [
+        "persona",
+        "organizacion",
+        "proyecto",
+        "tarea",
+        "decision",
+        "acuerdo"
+      ],
+      "pregunta_de_prueba": "¿Quién participó, qué se decidió y qué quedó pendiente?",
+      "campos_comunes": [
+        "id",
+        "tipo",
+        "clase",
+        "estado_editorial",
+        "estado_conocimiento",
+        "vigencia",
+        "sensibilidad",
+        "fuentes",
+        "registrado_en"
+      ],
+      "estado_inicial": {
+        "estado_editorial": "borrador",
+        "estado_conocimiento": "pendiente",
+        "vigencia": "sin_verificar",
+        "sensibilidad": "interno"
+      }
+    },
+    {
+      "tipo": "persona",
+      "prefijo": "PER",
+      "representa": "Persona relacionada al negocio en un rol o capacidad específica.",
+      "no_confundir": "Persona no equivale a cliente, cuenta, entidad o contacto autorizado; minimizar datos personales.",
+      "carpeta": "20_Entidades",
+      "contenido_minimo": [
+        "Rol y organización",
+        "contacto solo si autorizado",
+        "facultades verificadas",
+        "participación"
+      ],
+      "relaciones_candidatas": [
+        "organizacion",
+        "cliente_cuenta",
+        "proyecto",
+        "reunion",
+        "decision"
+      ],
+      "pregunta_de_prueba": "¿Qué rol tiene esta persona y qué facultad está acreditada?",
+      "campos_comunes": [
+        "id",
+        "tipo",
+        "clase",
+        "estado_editorial",
+        "estado_conocimiento",
+        "vigencia",
+        "sensibilidad",
+        "fuentes",
+        "registrado_en"
+      ],
+      "estado_inicial": {
+        "estado_editorial": "borrador",
+        "estado_conocimiento": "pendiente",
+        "vigencia": "sin_verificar",
+        "sensibilidad": "interno"
+      }
+    },
+    {
+      "tipo": "organizacion",
+      "prefijo": "ORG",
+      "representa": "Organización externa o unidad que puede intervenir en varias relaciones.",
+      "no_confundir": "Organización no es necesariamente cliente, proveedor ni responsable de pago.",
+      "carpeta": "20_Entidades",
+      "contenido_minimo": [
+        "Naturaleza",
+        "roles en relaciones",
+        "responsable de vínculo",
+        "sistemas oficiales"
+      ],
+      "relaciones_candidatas": [
+        "cliente_cuenta",
+        "proveedor",
+        "persona",
+        "proyecto"
+      ],
+      "pregunta_de_prueba": "¿De qué organización se trata y qué roles juega en cada relación?",
+      "campos_comunes": [
+        "id",
+        "tipo",
+        "clase",
+        "estado_editorial",
+        "estado_conocimiento",
+        "vigencia",
+        "sensibilidad",
+        "fuentes",
+        "registrado_en"
+      ],
+      "estado_inicial": {
+        "estado_editorial": "borrador",
+        "estado_conocimiento": "pendiente",
+        "vigencia": "sin_verificar",
+        "sensibilidad": "interno"
+      }
+    },
+    {
+      "tipo": "cliente_cuenta",
+      "prefijo": "CTA",
+      "representa": "Relación comercial con cuenta, prospecto o contratante, con estados diferenciados.",
+      "no_confundir": "No confundir prospecto, cliente, pagador, firmante, usuario y contratante.",
+      "carpeta": "20_Entidades",
+      "contenido_minimo": [
+        "Rol comercial y autoridad CRM",
+        "episodios y acuerdos",
+        "historial comercial",
+        "restricciones"
+      ],
+      "relaciones_candidatas": [
+        "organizacion",
+        "persona",
+        "oferta",
+        "proyecto",
+        "propuesta_comercial",
+        "acuerdo"
+      ],
+      "pregunta_de_prueba": "¿Quién contrata, paga y usa, y cuál es el estado comercial demostrado?",
+      "campos_comunes": [
+        "id",
+        "tipo",
+        "clase",
+        "estado_editorial",
+        "estado_conocimiento",
+        "vigencia",
+        "sensibilidad",
+        "fuentes",
+        "registrado_en"
+      ],
+      "estado_inicial": {
+        "estado_editorial": "borrador",
+        "estado_conocimiento": "pendiente",
+        "vigencia": "sin_verificar",
+        "sensibilidad": "interno"
+      }
+    },
+    {
+      "tipo": "propuesta_comercial",
+      "prefijo": "PCO",
+      "representa": "Oferta particular comunicada a un destinatario en versión y fecha concretas.",
+      "no_confundir": "Cotizado no significa aceptado, contratado, facturado ni cobrado.",
+      "carpeta": "30_Registros",
+      "contenido_minimo": [
+        "Cliente y oferta",
+        "versión",
+        "validez",
+        "precio/alcance",
+        "estado y acuse de aceptación"
+      ],
+      "relaciones_candidatas": [
+        "cliente_cuenta",
+        "oferta",
+        "acuerdo",
+        "proyecto",
+        "fuente"
+      ],
+      "pregunta_de_prueba": "¿Qué se le propuso específicamente al cliente y fue aceptado?",
+      "campos_comunes": [
+        "id",
+        "tipo",
+        "clase",
+        "estado_editorial",
+        "estado_conocimiento",
+        "vigencia",
+        "sensibilidad",
+        "fuentes",
+        "registrado_en"
+      ],
+      "estado_inicial": {
+        "estado_editorial": "borrador",
+        "estado_conocimiento": "pendiente",
+        "vigencia": "sin_verificar",
+        "sensibilidad": "interno"
+      }
+    },
+    {
+      "tipo": "acuerdo",
+      "prefijo": "ACU",
+      "representa": "Compromiso entre partes aplicable en un contexto y periodo, con evidencia.",
+      "no_confundir": "No convertir un correo informal o plantilla en contrato celebrado.",
+      "carpeta": "30_Registros",
+      "contenido_minimo": [
+        "Partes y autoridad",
+        "obligaciones",
+        "vigencia",
+        "excepciones",
+        "fuente jurídica",
+        "cumplimiento"
+      ],
+      "relaciones_candidatas": [
+        "persona",
+        "organizacion",
+        "propuesta_comercial",
+        "proyecto",
+        "fuente"
+      ],
+      "pregunta_de_prueba": "¿Qué obligación existe para quién, desde cuándo y dónde está la fuente?",
+      "campos_comunes": [
+        "id",
+        "tipo",
+        "clase",
+        "estado_editorial",
+        "estado_conocimiento",
+        "vigencia",
+        "sensibilidad",
+        "fuentes",
+        "registrado_en"
+      ],
+      "estado_inicial": {
+        "estado_editorial": "borrador",
+        "estado_conocimiento": "pendiente",
+        "vigencia": "sin_verificar",
+        "sensibilidad": "interno"
+      }
+    },
+    {
+      "tipo": "decision",
+      "prefijo": "DEC",
+      "representa": "Elección o autorización explícita sobre un asunto, ámbito y fecha.",
+      "no_confundir": "Una propuesta o interpretación del agente nunca es decisión aprobada.",
+      "carpeta": "30_Registros",
+      "contenido_minimo": [
+        "Problema",
+        "alternativas",
+        "facultad del decisor",
+        "decisión o propuesta",
+        "contexto",
+        "impactos"
+      ],
+      "relaciones_candidatas": [
+        "proyecto",
+        "oferta",
+        "modelo_negocio",
+        "fuente",
+        "protocolo"
+      ],
+      "pregunta_de_prueba": "¿Qué se decidió, quién tenía facultad y qué reemplazó?",
+      "campos_comunes": [
+        "id",
+        "tipo",
+        "clase",
+        "estado_editorial",
+        "estado_conocimiento",
+        "vigencia",
+        "sensibilidad",
+        "fuentes",
+        "registrado_en"
+      ],
+      "estado_inicial": {
+        "estado_editorial": "borrador",
+        "estado_conocimiento": "pendiente",
+        "vigencia": "sin_verificar",
+        "sensibilidad": "interno"
+      }
+    },
+    {
+      "tipo": "investigacion",
+      "prefijo": "INV",
+      "representa": "Proceso de análisis con pregunta, método, fuentes, límites y hallazgos.",
+      "no_confundir": "Análisis, dato observado, hipótesis y resultado comercial son categorías distintas.",
+      "carpeta": "10_Conocimiento",
+      "contenido_minimo": [
+        "Pregunta",
+        "método y muestra",
+        "fuentes",
+        "resultados",
+        "contraevidencia",
+        "hipótesis",
+        "aplicaciones"
+      ],
+      "relaciones_candidatas": [
+        "modelo_negocio",
+        "oferta",
+        "cliente_cuenta",
+        "caso",
+        "fuente"
+      ],
+      "pregunta_de_prueba": "¿Qué evidencia sostiene esta conclusión y cuáles son sus límites?",
+      "campos_comunes": [
+        "id",
+        "tipo",
+        "clase",
+        "estado_editorial",
+        "estado_conocimiento",
+        "vigencia",
+        "sensibilidad",
+        "fuentes",
+        "registrado_en"
+      ],
+      "estado_inicial": {
+        "estado_editorial": "borrador",
+        "estado_conocimiento": "pendiente",
+        "vigencia": "sin_verificar",
+        "sensibilidad": "interno"
+      }
+    },
+    {
+      "tipo": "fuente",
+      "prefijo": "F",
+      "representa": "Registro de procedencia, localizador, permiso y estado de lectura.",
+      "no_confundir": "La ficha de fuente no reemplaza original ni acredita vigencia por sí misma.",
+      "carpeta": "50_Fuentes",
+      "contenido_minimo": [
+        "Tipo y localizador",
+        "fecha del hecho y captura",
+        "acceso y uso autorizado",
+        "estado de lectura"
+      ],
+      "relaciones_candidatas": [
+        "acuerdo",
+        "oferta",
+        "decision",
+        "investigacion",
+        "proyecto"
+      ],
+      "pregunta_de_prueba": "¿De dónde procede la afirmación y se puede verificar con permiso?",
+      "campos_comunes": [
+        "id",
+        "tipo",
+        "clase",
+        "estado_editorial",
+        "estado_conocimiento",
+        "vigencia",
+        "sensibilidad",
+        "fuentes",
+        "registrado_en"
+      ],
+      "estado_inicial": {
+        "estado_editorial": "borrador",
+        "estado_conocimiento": "pendiente",
+        "vigencia": "sin_verificar",
+        "sensibilidad": "interno"
+      }
+    },
+    {
+      "tipo": "tarea",
+      "prefijo": "TAR",
+      "representa": "Compromiso de acción con responsable, fecha programada y fecha límite distintas.",
+      "no_confundir": "Tarea no equivale a decisión, evento realizado o actividad facturable.",
+      "carpeta": "40_Seguimiento",
+      "contenido_minimo": [
+        "Acción y resultado",
+        "responsable",
+        "programada y vence",
+        "proyecto y dependencias",
+        "evidencia de cierre"
+      ],
+      "relaciones_candidatas": [
+        "persona",
+        "proyecto",
+        "reunion",
+        "decision"
+      ],
+      "pregunta_de_prueba": "¿Qué debe hacerse, quién responde y cuándo debe entregarse?",
+      "campos_comunes": [
+        "id",
+        "tipo",
+        "clase",
+        "estado_editorial",
+        "estado_conocimiento",
+        "vigencia",
+        "sensibilidad",
+        "fuentes",
+        "registrado_en"
+      ],
+      "estado_inicial": {
+        "estado_editorial": "borrador",
+        "estado_conocimiento": "pendiente",
+        "vigencia": "sin_verificar",
+        "sensibilidad": "interno"
+      }
+    },
+    {
+      "tipo": "proveedor",
+      "prefijo": "PVD",
+      "representa": "Relación con tercero que proporciona recursos o servicios con dependencia verificable.",
+      "no_confundir": "Tener el contacto no implica contrato ni proveedor autorizado.",
+      "carpeta": "20_Entidades",
+      "contenido_minimo": [
+        "Organización y servicios",
+        "condiciones/contrato",
+        "riesgo, dependencias y alternativa"
+      ],
+      "relaciones_candidatas": [
+        "organizacion",
+        "recurso",
+        "acuerdo",
+        "proyecto"
+      ],
+      "pregunta_de_prueba": "¿Qué proveedor presta qué, en qué condiciones y qué riesgo representa?",
+      "campos_comunes": [
+        "id",
+        "tipo",
+        "clase",
+        "estado_editorial",
+        "estado_conocimiento",
+        "vigencia",
+        "sensibilidad",
+        "fuentes",
+        "registrado_en"
+      ],
+      "estado_inicial": {
+        "estado_editorial": "borrador",
+        "estado_conocimiento": "pendiente",
+        "vigencia": "sin_verificar",
+        "sensibilidad": "interno"
+      }
+    },
+    {
+      "tipo": "recurso",
+      "prefijo": "REC",
+      "representa": "Activo, material, infraestructura o capacidad disponible o requerida.",
+      "no_confundir": "No confundir disponibilidad reportada con inventario certificado.",
+      "carpeta": "20_Entidades",
+      "contenido_minimo": [
+        "Tipo y capacidad",
+        "ubicación/sistema fuente",
+        "disponibilidad no garantizada",
+        "custodio",
+        "mantenimiento"
+      ],
+      "relaciones_candidatas": [
+        "proveedor",
+        "herramienta",
+        "proyecto",
+        "proceso",
+        "fuente"
+      ],
+      "pregunta_de_prueba": "¿Qué recurso existe y dónde confirmar disponibilidad real?",
+      "campos_comunes": [
+        "id",
+        "tipo",
+        "clase",
+        "estado_editorial",
+        "estado_conocimiento",
+        "vigencia",
+        "sensibilidad",
+        "fuentes",
+        "registrado_en"
+      ],
+      "estado_inicial": {
+        "estado_editorial": "borrador",
+        "estado_conocimiento": "pendiente",
+        "vigencia": "sin_verificar",
+        "sensibilidad": "interno"
+      }
+    },
+    {
+      "tipo": "indicador",
+      "prefijo": "KPI",
+      "representa": "Definición operacional de una medida, fuente, periodicidad y límites.",
+      "no_confundir": "Valor calculado o estimado no equivale a dato oficial ni a objetivo aprobado.",
+      "carpeta": "40_Seguimiento",
+      "contenido_minimo": [
+        "Definición y fórmula",
+        "unidad y granularidad",
+        "sistema fuente",
+        "frecuencia",
+        "responsable"
+      ],
+      "relaciones_candidatas": [
+        "modelo_negocio",
+        "proceso",
+        "proyecto",
+        "fuente"
+      ],
+      "pregunta_de_prueba": "¿Qué estamos midiendo, con qué cálculo y qué fuente manda?",
+      "campos_comunes": [
+        "id",
+        "tipo",
+        "clase",
+        "estado_editorial",
+        "estado_conocimiento",
+        "vigencia",
+        "sensibilidad",
+        "fuentes",
+        "registrado_en"
+      ],
+      "estado_inicial": {
+        "estado_editorial": "borrador",
+        "estado_conocimiento": "pendiente",
+        "vigencia": "sin_verificar",
+        "sensibilidad": "interno"
+      }
+    },
+    {
+      "tipo": "comunicacion",
+      "prefijo": "COM",
+      "representa": "Pieza o mensaje con audiencia, propósito, versión y claims autorizados.",
+      "no_confundir": "Borrador de copy no equivale a anuncio aprobado o comunicado enviado.",
+      "carpeta": "30_Registros",
+      "contenido_minimo": [
+        "Audiencia y canal",
+        "intención",
+        "hechos/claims",
+        "fuente de marca",
+        "revisión",
+        "publicación"
+      ],
+      "relaciones_candidatas": [
+        "oferta",
+        "cliente_cuenta",
+        "investigacion",
+        "decision",
+        "fuente"
+      ],
+      "pregunta_de_prueba": "¿Qué se puede afirmar, para quién y con qué evidencia?",
+      "campos_comunes": [
+        "id",
+        "tipo",
+        "clase",
+        "estado_editorial",
+        "estado_conocimiento",
+        "vigencia",
+        "sensibilidad",
+        "fuentes",
+        "registrado_en"
+      ],
+      "estado_inicial": {
+        "estado_editorial": "borrador",
+        "estado_conocimiento": "pendiente",
+        "vigencia": "sin_verificar",
+        "sensibilidad": "interno"
+      }
+    }
+  ]
+}
