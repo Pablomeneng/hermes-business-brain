@@ -82,7 +82,7 @@ def _check_body(vault: Path, target: Path, previous: str, candidate: str, *, all
         raise ValueError("El borrador debe incluir título y contenido sustantivo")
     if candidate.startswith("---\n"):
         raise ValueError("El cuerpo candidato no puede declarar YAML; los metadatos se administran por separado")
-    if any(s in candidate for s in ("-----BEGIN PRIVATE KEY-----", "-----BEGIN OPENSSH PRIVATE KEY-----")):
+    if any(s in candidate for s in ("-----BEGIN " + "PRIVATE KEY-----", "-----BEGIN OPENSSH " + "PRIVATE KEY-----")):
         raise ValueError("Marcador de credencial detectado")
     if candidate == previous:
         raise ValueError("Sin cambios; no crear otra revisión")

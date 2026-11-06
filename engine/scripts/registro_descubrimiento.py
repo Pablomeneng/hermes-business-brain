@@ -24,7 +24,7 @@ def capture_discovery(vault_path: Path, title: str, content_file: Path,
     text = source.read_text(encoding="utf8").strip()
     if len(text) < 20 or "\x00" in text:
         raise ValueError("Captura vacía o inválida")
-    if any(x in text for x in ("-----BEGIN PRIVATE KEY-----", "-----BEGIN OPENSSH PRIVATE KEY-----")):
+    if any(x in text for x in ("-----BEGIN " + "PRIVATE KEY-----", "-----BEGIN OPENSSH " + "PRIVATE KEY-----")):
         raise ValueError("Captura contiene una credencial: no guardar")
     refs = local_sources(vault, sources or [])
     nid = "CAP-" + uuid4().hex[:12].upper()

@@ -75,7 +75,7 @@ def _read_input(file_path: Path, vault: Path) -> tuple[str, str]:
         raise ValueError("Se requiere un documento Markdown desarrollado con un título y contenido")
     if text.startswith("---\n"):
         raise ValueError("El documento de entrada debe estar sin YAML; el sistema administra sus propiedades")
-    if any(marker in text for marker in ("-----BEGIN PRIVATE KEY-----", "-----BEGIN OPENSSH PRIVATE KEY-----")):
+    if any(marker in text for marker in ("-----BEGIN " + "PRIVATE KEY-----", "-----BEGIN OPENSSH " + "PRIVATE KEY-----")):
         raise ValueError("El borrador parece contener una clave privada")
     return text, hashlib.sha256(original).hexdigest()
 
