@@ -65,6 +65,34 @@ All handlers return a JSON string with `stdout`, `stderr`, `exit_code` and an
 English `summary`. Each schema lists the argument flags; they mirror the
 upstream CLIs.
 
+## Documentation
+
+Organized by quadrant (Diátaxis).
+
+**Reference** — the machinery, as a dictionary:
+
+- [Reference: Tools](docs/reference/tools.md) — the 13 tools: arguments, types,
+  required/optional, engine backings, examples.
+- [Reference: Bundled Skills](docs/reference/skills.md) — the 19 bundled
+  skills (`hermes-business-brain:<name>`), families, when each activates.
+- [Reference: Upstream CLI](docs/reference/upstream-cli.md) — cerebro.py
+  subcommands not exposed as plugin tools in v0.1, via the vendored launcher.
+
+**Explanation** — how and why:
+
+- [Explanation: Architecture](docs/explanation/architecture.md) — native shell
+  + vendored engine; subprocess execution model; read-only data; no network;
+  skills interaction; why wrap instead of rewrite.
+- [Explanation: Privacy and guardrails](docs/explanation/privacy-and-guardrails.md)
+  — the invariants as implemented: authorization gates, NO VERIFICADO, source
+  over summary, ID resolution, rejected legacy, provided-path-only, proposal
+  ≠ decision.
+- [Explanation: Upstream origin](docs/explanation/upstream-origin.md) —
+  provenance, what is byte-identical, what is adapted, license/attribution split.
+
+**How-to and Tutorial** quadrants are not part of this machinery pass; they
+will be added separately.
+
 ## Layout
 
 ```
